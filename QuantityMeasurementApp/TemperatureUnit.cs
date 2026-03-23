@@ -10,16 +10,10 @@ namespace QuantityMeasurementApp
 
     public static class TemperatureUnitExtensions
     {
-        // Lambda expression: temperature does not support arithmetic
         public static ISupportsArithmetic supportsArithmetic = new SupportsArithmeticImpl(() => false);
 
-        // Lambda: Celsius to Celsius (identity)
         private static readonly Func<double, double> CELSIUS_TO_CELSIUS = (celsius) => celsius;
-
-        // Lambda: Fahrenheit to Celsius
         private static readonly Func<double, double> FAHRENHEIT_TO_CELSIUS = (fahrenheit) => (fahrenheit - 32.0) * 5.0 / 9.0;
-
-        // Lambda: Celsius to Fahrenheit
         private static readonly Func<double, double> CELSIUS_TO_FAHRENHEIT = (celsius) => (celsius * 9.0 / 5.0) + 32.0;
 
         public static double GetConversionFactor(this TemperatureUnit unit)
