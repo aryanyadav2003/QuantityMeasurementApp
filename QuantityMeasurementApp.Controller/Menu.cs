@@ -1,5 +1,5 @@
 using System;
-using QuantityMeasurementApp.Entity;
+using QuantityMeasurementApp.Entity.DTOs;
 
 namespace QuantityMeasurementApp.Controller
 {

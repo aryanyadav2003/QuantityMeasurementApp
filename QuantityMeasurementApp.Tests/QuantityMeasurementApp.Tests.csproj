@@ -1,25 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsTestProject>true</IsTestProject>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSTest" Version="4.0.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.5.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.5.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
-  </ItemGroup>
- <ItemGroup>
-    <ProjectReference Include="..\QuantityMeasurementApp.Controller\QuantityMeasurementApp.Controller.csproj" />
-    <ProjectReference Include="..\QuantityMeasurementApp.Entity\QuantityMeasurementApp.Entity.csproj" />
+    <!-- Only reference business logic -->
+    <ProjectReference Include="..\QuantityMeasurementApp.Business\QuantityMeasurementApp.Business.csproj" />
     <ProjectReference Include="..\QuantityMeasurementApp.Repository\QuantityMeasurementApp.Repository.csproj" />
-    <ProjectReference Include="..\QuantityMeasurementApp.Service\QuantityMeasurementApp.Service.csproj" />
-    <ProjectReference Include="..\QuantityMeasurementApp.API\QuantityMeasurementApp.API.csproj" />
-
+    <ProjectReference Include="..\QuantityMeasurementApp.Entity\QuantityMeasurementApp.Entity.csproj" />
   </ItemGroup>
+
 </Project>

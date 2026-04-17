@@ -1,0 +1,24 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Logs
+*.log
+
+# Compiled files
+*.dll
+*.exe
+
+# Test results
+TestResults/
+
+# Node (if any)
+node_modules/
+
+# Your large folder (IMPORTANT)
+rogue company/
