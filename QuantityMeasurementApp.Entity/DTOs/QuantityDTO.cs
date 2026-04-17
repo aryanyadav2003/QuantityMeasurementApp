@@ -9,33 +9,35 @@ namespace QuantityMeasurementApp.Entity.DTOs
         private string _unit;
         private string _measurementType;
 
+        // Parameterless constructor for deserialization
+        public QuantityDTO() { }
+
         public QuantityDTO(double value, string unit, string measurementType)
         {
             _value           = value;
-            _unit            = unit.ToUpper();
-            _measurementType = measurementType.ToUpper();
+            _unit            = unit?.ToUpper();
+            _measurementType = measurementType?.ToUpper();
         }
 
         [Required(ErrorMessage = "Value is required.")]
-        [Range(double.MinValue, double.MaxValue,
-            ErrorMessage = "Value must be a finite number.")]
         public double Value
         {
             get { return _value; }
+            set { _value = value; }
         }
 
         [Required(ErrorMessage = "Unit is required.")]
-        [StringLength(50, ErrorMessage = "Unit must not exceed 50 characters.")]
         public string Unit
         {
             get { return _unit; }
+            set { _unit = value?.ToUpper(); }
         }
 
         [Required(ErrorMessage = "MeasurementType is required.")]
-        [StringLength(50, ErrorMessage = "MeasurementType must not exceed 50 characters.")]
         public string MeasurementType
         {
             get { return _measurementType; }
+            set { _measurementType = value?.ToUpper(); }
         }
 
         public override string ToString()

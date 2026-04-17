@@ -16,7 +16,6 @@ namespace QuantityMeasurementApp.API.Controllers
     /// </summary>
     [ApiController]
     [Route("api/v1/quantities")]
-    [Authorize]
     public class QuantityMeasurementController : ControllerBase
     {
         /// <summary>
@@ -288,7 +287,7 @@ namespace QuantityMeasurementApp.API.Controllers
         /// 500 Internal Server Error if history retrieval fails.
         /// </returns>
         [HttpGet("history")]
-        [Authorize(Roles = "ADMIN")]
+        [Authorize]
         public IActionResult GetHistory()
         {
             try
@@ -322,7 +321,7 @@ namespace QuantityMeasurementApp.API.Controllers
         /// 500 Internal Server Error if retrieval fails.
         /// </returns>
         [HttpGet("history/operation/{operation}")]
-        [Authorize(Roles = "ADMIN")]
+        [Authorize]
         public IActionResult GetByOperation(string operation)
         {
             try
@@ -356,7 +355,7 @@ namespace QuantityMeasurementApp.API.Controllers
         /// 500 Internal Server Error if retrieval fails.
         /// </returns>
         [HttpGet("history/type/{measurementType}")]
-        [Authorize(Roles = "ADMIN")]
+        [Authorize]
         public IActionResult GetByType(string measurementType)
         {
             try
@@ -386,7 +385,7 @@ namespace QuantityMeasurementApp.API.Controllers
         /// 500 Internal Server Error if count retrieval fails.
         /// </returns>
         [HttpGet("count")]
-        [Authorize(Roles = "ADMIN")]
+        [Authorize]
         public IActionResult GetCount()
         {
             try

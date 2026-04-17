@@ -23,6 +23,9 @@ namespace QuantityMeasurementApp.Business
 
         public QuantityDTO Compare(QuantityDTO q1, QuantityDTO q2)
         {
+            if (q1 == null || q2 == null)
+                throw new QuantityMeasurementException("Both quantities are required for comparison.");
+
             try
             {
                 ValidateSameType(q1, q2);
@@ -48,6 +51,11 @@ namespace QuantityMeasurementApp.Business
 
         public QuantityDTO Convert(QuantityDTO quantity, string targetUnit)
         {
+            if (quantity == null)
+                throw new QuantityMeasurementException("Quantity is required for conversion.");
+            if (string.IsNullOrEmpty(targetUnit))
+                throw new QuantityMeasurementException("Target unit is required for conversion.");
+
             try
             {
                 QuantityDTO result = ResolveAndConvert(quantity, targetUnit);
@@ -71,6 +79,9 @@ namespace QuantityMeasurementApp.Business
 
         public QuantityDTO Add(QuantityDTO q1, QuantityDTO q2, string targetUnit)
         {
+            if (q1 == null || q2 == null)
+                throw new QuantityMeasurementException("Both quantities are required for addition.");
+
             try
             {
                 ValidateSameType(q1, q2);
@@ -95,6 +106,9 @@ namespace QuantityMeasurementApp.Business
 
         public QuantityDTO Subtract(QuantityDTO q1, QuantityDTO q2, string targetUnit)
         {
+            if (q1 == null || q2 == null)
+                throw new QuantityMeasurementException("Both quantities are required for subtraction.");
+
             try
             {
                 ValidateSameType(q1, q2);
@@ -119,6 +133,9 @@ namespace QuantityMeasurementApp.Business
 
         public QuantityDTO Divide(QuantityDTO q1, QuantityDTO q2)
         {
+            if (q1 == null || q2 == null)
+                throw new QuantityMeasurementException("Both quantities are required for division.");
+
             try
             {
                 ValidateSameType(q1, q2);

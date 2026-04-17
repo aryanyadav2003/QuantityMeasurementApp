@@ -11,20 +11,10 @@ using QuantityMeasurementApp.Repository.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
-bool isEfToolsRunning = Environment.GetEnvironmentVariable("EF_TOOLS") == "true";
-
-// ── Database ──────────────────────────────────────────
-if (isEfToolsRunning)
-{
-    builder.Services.AddDbContext<QuantityMeasurementDbContext>(options =>
-        options.UseSqlServer(
-            builder.Configuration.GetConnectionString("DefaultConnection")));
-}
-else
-{
-    builder.Services.AddDbContext<QuantityMeasurementDbContext>(options =>
-        options.UseInMemoryDatabase("QuantityMeasurementDB"));
-}
+// ── Database — Always SQL Server (data persists to SSMS) ─
+builder.Services.AddDbContext<QuantityMeasurementDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ── Repositories ──────────────────────────────────────
 builder.Services.AddScoped<IQuantityMeasurementRepository,
@@ -40,6 +30,26 @@ builder.Services.AddScoped<IAuthService,
 
 // ── AES Encryption Service ────────────────────────────
 builder.Services.AddScoped<AesEncryptionService>();
+
+// ── CORS — allow frontend ─────────────────────────────
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("FrontendPolicy", policy =>
+    {
+        policy
+            .WithOrigins(
+                "http://localhost:5500",    // VS Code Live Server
+                "http://127.0.0.1:5500",
+                "http://localhost:3000",
+                "http://127.0.0.1:3000",
+                "http://localhost:4200",
+                "http://127.0.0.1:4200",
+                "null")                     // file:// protocol
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+            // NOTE: AllowCredentials() removed — incompatible with "null" origin
+    });
+});
 
 // ── JWT Authentication ────────────────────────────────
 string jwtKey = builder.Configuration["Jwt:Key"]
@@ -68,7 +78,13 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddAuthorization();
 
 // ── Controllers + Swagger ─────────────────────────────
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy =
+            System.Text.Json.JsonNamingPolicy.CamelCase;
+        options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+    });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -79,7 +95,6 @@ builder.Services.AddSwaggerGen(options =>
         Description = "UC18 — JWT Auth + AES-256 Encryption + Quantity Measurement REST API"
     });
 
-    // JWT Authorize button in Swagger UI
     options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
         Name         = "Authorization",
@@ -108,9 +123,13 @@ builder.Services.AddSwaggerGen(options =>
 
 var app = builder.Build();
 
+// ── CORS must be first to ensure headers are added to all responses (including errors)
+app.UseCors("FrontendPolicy");
+
 app.UseMiddleware<GlobalExceptionHandler>();
 app.UseSwagger();
 app.UseSwaggerUI();
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
