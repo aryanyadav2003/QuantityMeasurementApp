@@ -1906,8 +1906,8 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-              "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+            "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+              "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
             },
             "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
               "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"

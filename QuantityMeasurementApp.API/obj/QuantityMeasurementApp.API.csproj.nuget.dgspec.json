@@ -35,8 +35,8 @@
               "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
                 "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj"
               },
-              "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-                "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+              "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+                "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
               }
             }
           }
@@ -549,8 +549,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-                "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+              "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+                "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
               },
               "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
                 "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
@@ -881,14 +881,14 @@
         }
       }
     },
-    "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+    "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
+        "projectUniqueName": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
         "projectName": "QuantityMeasurementApp.Entity",
-        "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
+        "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\obj\\",
+        "outputPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1248,8 +1248,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-                "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+              "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+                "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
               }
             }
           }
