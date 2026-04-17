@@ -49,7 +49,10 @@ namespace QuantityMeasurementApp.API.Middleware
                 Path      = context.Request.Path
             };
 
-            string json = JsonSerializer.Serialize(error);
+            string json = JsonSerializer.Serialize(error, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            });
             await context.Response.WriteAsync(json);
         }
     }
