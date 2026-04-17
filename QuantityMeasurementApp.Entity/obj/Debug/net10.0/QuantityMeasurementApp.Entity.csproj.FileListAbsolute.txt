@@ -53,3 +53,15 @@ D:\clone\backend\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasure
 D:\clone\backend\QuantityMeasurementApp.Entity\obj\Debug\net10.0\refint\QuantityMeasurementApp.Entity.dll
 D:\clone\backend\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.pdb
 D:\clone\backend\QuantityMeasurementApp.Entity\obj\Debug\net10.0\ref\QuantityMeasurementApp.Entity.dll
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\bin\Debug\net10.0\QuantityMeasurementApp.Entity.deps.json
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\bin\Debug\net10.0\QuantityMeasurementApp.Entity.dll
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\bin\Debug\net10.0\QuantityMeasurementApp.Entity.pdb
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.AssemblyInfoInputs.cache
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.AssemblyInfo.cs
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.csproj.CoreCompileInputs.cache
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.sourcelink.json
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.dll
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\refint\QuantityMeasurementApp.Entity.dll
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\QuantityMeasurementApp.Entity.pdb
+D:\QuantitMeasurementApp\QuantityMeasurementApp.Entity\obj\Debug\net10.0\ref\QuantityMeasurementApp.Entity.dll

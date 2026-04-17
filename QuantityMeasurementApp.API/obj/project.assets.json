@@ -863,6 +863,37 @@
           }
         }
       },
+      "Npgsql/10.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "[10.0.4, 11.0.0)",
+          "Microsoft.EntityFrameworkCore.Relational": "[10.0.4, 11.0.0)",
+          "Npgsql": "10.0.2"
+        },
+        "compile": {
+          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/7.3.1": {
         "type": "package",
         "dependencies": {
@@ -1196,6 +1227,7 @@
           "Microsoft.EntityFrameworkCore": "10.0.5",
           "Microsoft.EntityFrameworkCore.InMemory": "10.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.5",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1",
           "QuantityMeasurementApp.Entity": "1.0.0"
         },
         "compile": {
@@ -3188,6 +3220,40 @@
         "packageIcon.png"
       ]
     },
+    "Npgsql/10.0.2": {
+      "sha512": "q5RfBI+wywJSFUNDE1L4ZbHEHCFTblo8Uf6A6oe4feOUFYiUQXyAf9GBh5qEZpvJaHiEbpBPkQumjEhXCJxdrg==",
+      "type": "package",
+      "path": "npgsql/10.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.dll",
+        "lib/net10.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/net9.0/Npgsql.dll",
+        "lib/net9.0/Npgsql.xml",
+        "npgsql.10.0.2.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/10.0.1": {
+      "sha512": "P6EwH0Q4xkaA264iNZDqCPhWt8pscfUGxXazDQg4noBfqjoOlk4hKWfvBjF9ZX3R/9JybRmmJfmxr2iBMj0EpA==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/10.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.10.0.1.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "Swashbuckle.AspNetCore/7.3.1": {
       "sha512": "6u8w+UXp/sF89xQjfydWw6znQrUpbpFOmEIs8ODE+S0bV+mCQ9dNP4mk+HRsGHylpDaP5KSYSCEfFSgluLXHsA==",
       "type": "package",
@@ -3652,6 +3718,7 @@
       "Microsoft.EntityFrameworkCore >= 10.0.5",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.5",
       "Microsoft.EntityFrameworkCore.InMemory >= 10.0.5",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.1",
       "QuantityMeasurementApp.Business >= 1.0.0",
       "QuantityMeasurementApp.Entity >= 1.0.0",
       "Swashbuckle.AspNetCore >= 7.3.1"
@@ -3664,11 +3731,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\clone\\backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
+      "projectUniqueName": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
       "projectName": "QuantityMeasurementApp.API",
-      "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
+      "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\clone\\backend\\QuantityMeasurementApp.API\\obj\\",
+      "outputPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3689,11 +3756,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
-              "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj"
+            "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
+              "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj"
             },
-            "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-              "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+            "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+              "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
             }
           }
         }
@@ -3731,6 +3798,10 @@
           "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[10.0.5, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
+            "target": "Package",
+            "version": "[10.0.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

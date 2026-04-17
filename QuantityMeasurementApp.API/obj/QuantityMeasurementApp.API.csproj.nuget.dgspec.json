@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\clone\\backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {}
+    "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {}
   },
   "projects": {
-    "D:\\clone\\backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {
+    "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clone\\backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
+        "projectUniqueName": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
         "projectName": "QuantityMeasurementApp.API",
-        "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
+        "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\clone\\backend\\QuantityMeasurementApp.API\\obj\\",
+        "outputPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
-                "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj"
+              "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
+                "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj"
               },
-              "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-                "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+              "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+                "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
               }
             }
           }
@@ -74,6 +74,10 @@
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[10.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -517,14 +521,14 @@
         }
       }
     },
-    "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
+    "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj",
+        "projectUniqueName": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj",
         "projectName": "QuantityMeasurementApp.Business",
-        "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj",
+        "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\QuantityMeasurementApp.Business.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\clone\\backend\\QuantityMeasurementApp.Business\\obj\\",
+        "outputPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -545,11 +549,11 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-                "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+              "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+                "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
               },
-              "D:\\clone\\backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
-                "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
+              "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
+                "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
               }
             }
           }
@@ -877,14 +881,14 @@
         }
       }
     },
-    "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+    "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
+        "projectUniqueName": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
         "projectName": "QuantityMeasurementApp.Entity",
-        "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
+        "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\obj\\",
+        "outputPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1216,14 +1220,14 @@
         }
       }
     },
-    "D:\\clone\\backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
+    "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\clone\\backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
+        "projectUniqueName": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
         "projectName": "QuantityMeasurementApp.Repository",
-        "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
+        "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\clone\\backend\\QuantityMeasurementApp.Repository\\obj\\",
+        "outputPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1244,8 +1248,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
-                "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
+              "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj": {
+                "projectPath": "d:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj"
               }
             }
           }
@@ -1287,6 +1291,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[10.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[10.0.1, )"
             }
           },
           "imports": [

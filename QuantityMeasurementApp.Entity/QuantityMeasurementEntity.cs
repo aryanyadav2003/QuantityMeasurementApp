@@ -93,7 +93,7 @@ namespace QuantityMeasurementApp.Entity
         // Parameterless constructor — required by EF Core
         public QuantityMeasurementEntity()
         {
-            Timestamp = DateTime.Now;
+            Timestamp = DateTime.UtcNow;
         }
 
         // ── Static factory methods ────────────────────────────

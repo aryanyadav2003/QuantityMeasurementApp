@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
+      "projectUniqueName": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
       "projectName": "QuantityMeasurementApp.Entity",
-      "projectPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
+      "projectPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\QuantityMeasurementApp.Entity.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\clone\\backend\\QuantityMeasurementApp.Entity\\obj\\",
+      "outputPath": "D:\\QuantitMeasurementApp\\QuantityMeasurementApp.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
